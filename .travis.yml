@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t dkwitt/DevOps -f mydockerfrontend/Dockerfile.dev mydockerfrontend/.
+  - docker build -t dkwitt/devOps -f mydockerfrontend/Dockerfile.dev mydockerfrontend/.
 
 script: 
   - docker run -e CI=true dkwitt/DevOps yarn test 
